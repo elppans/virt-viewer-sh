@@ -5,6 +5,14 @@ ___
 Para conectar em uma máquina virtual usando Virt Viewer, pode-se usar um arquivo com extenção ".vv".
 Por exemplo: `local.vv`
 
+Para usar, basta clicar no arquivo e irá surgir a janela do Virt Viewer com a Máquina Virtual.  
+Se for usar o arquivo via linha de comando, deverá usar o comando `remote-viewer`.  
+Um exemplo, se seu arquivo estiver no diretório Downloads, o comando deve ser executado desta maneira:  
+
+```bash
+remote-viewer ~/Downloads/arquivo.vv
+```
+
 ## Um exemplo para o arquivo de configuração do Virt Viewer:
 
 ```ini
@@ -23,7 +31,7 @@ Neste exemplo:
 - `delete-this-file=0` indica que o arquivo não deve ser excluído após o uso.
 - `fullscreen=0` significa que o Virt Viewer não iniciará em modo de tela cheia.
 
-Você pode usar o seguinte comando para executar o Virt Viewer com base nestas informações fornecidas:
+Você pode usar o seguinte comando para executar o Virt Viewer (Sem o arquivo) com base nestas informações fornecidas:
 
 ```bash
 virt-viewer --connect "spice://127.0.0.1:5902"
@@ -59,7 +67,7 @@ Aqui estão algumas explicações para cada opção:
 - `direct=0`: Não tenta tunelar a console via SSH.
 - `attach=1`: Usa um socket pré-conectado via libvirt (se possível).
 
-Você pode usar o seguinte comando para executar o Virt Viewer com base nestas informações fornecidas:
+Você pode usar o seguinte comando para executar o Virt Viewer (Sem o arquivo) com base nestas informações fornecidas:
 
 ```bash
 virt-viewer --connect "spice://127.0.0.1:5902" --wait --reconnect --zoom=100 --direct --attach
@@ -96,7 +104,7 @@ ___
     secure-channels=main,inputs
     ```
 
-Um comando completo com todas as opções fornecidas até agora:
+Um comando completo (Sem o arquivo) com todas as opções fornecidas até agora:
 >A opção `--title "Minha VM"` não é disponível via linha de comando
 
 ```bash

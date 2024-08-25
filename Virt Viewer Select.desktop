@@ -1,18 +1,15 @@
 [Desktop Entry]
-Comment[pt_BR]=
-Comment=
-Exec=/usr/bin/virt-viewer --connect qemu:///system --reconnect --zoom=100 --direct --attach --auto-resize=always --hotkeys=toggle-fullscreen=Super_L+F,release-cursor=Super_L+C
-GenericName[pt_BR]=
-GenericName=
+Comment=Visualizador de máquinas virtuais
+Exec=virt-viewer --connect qemu:///system --reconnect --zoom=100 --direct --attach --auto-resize=always --cursor=auto --shared
+GenericName=Visualizador de VMs
 Icon=virt-viewer
 MimeType=
-Name[pt_BR]=Virt Viewer Select
 Name=Virt Viewer Select
-Path=
+Path=/usr/bin
 StartupNotify=true
 Terminal=false
 TerminalOptions=
 Type=Application
 X-KDE-SubstituteUID=false
 X-KDE-Username=
-Categories=System;
+Categories=System;Virtualization;

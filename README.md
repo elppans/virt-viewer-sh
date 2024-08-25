@@ -113,5 +113,13 @@ virt-viewer --connect "spice://127.0.0.1:5902" --wait --reconnect --zoom=100 --d
 
 Este comando inclui todas as opções, como aguardar a inicialização da VM, reconectar automaticamente, definir o nível de zoom, evitar o túnel SSH e usar um socket pré-conectado via libvirt. O título da janela será "Minha VM", e você pode alternar para o modo de tela cheia com `Ctrl+Alt+F` e liberar o cursor com `Ctrl+Alt+R`.
 ___
+## Arquivo Desktop Virt Viewer Select
 
+Para facilitar criei um arquivo com o nome [virt-viewer-qemu-select.desktop](https://raw.githubusercontent.com/elppans/virt-viewer-sh/main/virt-viewer-qemu-select.desktop).  
+Ele serve para executar o Virt Viewer conectando em "`qemu:///system`" após a ativação da VM específica. Será aberto uma janela de seleção para escolher uma entre todas as VMs ativas, então só escolher e clicar em OK.  
+
+Ótimo pra se usar, por exemplo, junto com a [extenção de Máquinas Virtuais](https://cockpit-project.org/blog/cockpit-142.html) do [Cockpit](https://cockpit-project.org/), já que o botão ["Launch remote viewer"](https://github.com/cockpit-project/cockpit/issues?q=is%3Aissue+is%3Aall+Launch+Remote+Viewer+) não funciona (pelo menos pra mim).  
+
+Para usar, basta fazer Download do arquivo e copiar para seu diretório "`$HOME/.local/share/applications`"
+___
 #### Para mais informações, consultar `man virt-viewer` ou `virt-viewer --help`

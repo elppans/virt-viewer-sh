@@ -97,9 +97,10 @@ ___
     ```
 
 Um comando completo com todas as opções fornecidas até agora:
+>A opção `--title "Minha VM"` não é disponível via linha de comando
 
 ```bash
-virt-viewer --connect "spice://127.0.0.1:5902" --wait --reconnect --zoom=100 --direct --attach --title "Minha VM" --toggle-fullscreen=Ctrl+Alt+F --release-cursor=Ctrl+Alt+R
+virt-viewer --connect "spice://127.0.0.1:5902" --wait --reconnect --zoom=100 --direct --attach --hotkeys=toggle-fullscreen=Ctrl+Alt+F,release-cursor=Ctrl+Alt+R
 ```
 
 Este comando inclui todas as opções, como aguardar a inicialização da VM, reconectar automaticamente, definir o nível de zoom, evitar o túnel SSH e usar um socket pré-conectado via libvirt. O título da janela será "Minha VM", e você pode alternar para o modo de tela cheia com `Ctrl+Alt+F` e liberar o cursor com `Ctrl+Alt+R`.

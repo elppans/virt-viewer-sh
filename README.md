@@ -123,3 +123,6 @@ Ele serve para executar o Virt Viewer conectando em "`qemu:///system`" após a a
 Para usar, basta fazer Download do arquivo e copiar para seu diretório "`$HOME/.local/share/applications`"
 ___
 #### Para mais informações, consultar `man virt-viewer` ou `virt-viewer --help`
+___
+- Leituras recomendadas:  
+[Compartilhamento de Pastas e Performance no KVM/QEMU (Windows & Linux)](https://elppans.github.io/doc-linux/linux_virt_qemu_spice_compartilhamento_public)
